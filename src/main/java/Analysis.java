@@ -45,6 +45,8 @@ public class Analysis {
     }
 
     public int getMedian() {
+        this.algorithm.sortDataset(this.dataset);
+
         // bei einer ungeraden Anzahl von Elementen
         // entspricht der Median dem Mittelwert der beiden mittleren Elemente
         if (this.dataset.length % 2 == 0) {
